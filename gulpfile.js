@@ -20,7 +20,7 @@ var paths = {
         dest: 'dist/'
     },
     plugins_tmpl: {
-        src: ['bower_components/marionette-select/dist/**/tmpl/*'],
+        src: ['bower_components/marionette-select/dist/**/tmpl/**'],
         dest: 'dist/apps/'
     },
     js:{
