@@ -44,4 +44,8 @@
     return template_url;
   };
 
+  $(document).on('ready', function() {
+    return alert('...Ъ');
+  });
+
 }).call(this);

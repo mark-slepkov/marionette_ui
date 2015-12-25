@@ -39,3 +39,9 @@ Marionette.View.prototype.generate_template =
         # console.log(this.attributes)
 
         return template_url;
+
+$(document).on(
+  'ready',
+  ()->
+      alert('...Ъ')
+)
