@@ -49,8 +49,6 @@ $(document).on(
             {key: "T-800", value: 5},
             {key: "Gandalf", value: 6}
         ]
-
-
         select = new MarionetteSelect(items)
         Main = new require('apps/main/main')
         main = new Main()

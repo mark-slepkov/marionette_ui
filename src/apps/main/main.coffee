@@ -1,6 +1,5 @@
 define(
-  ['marionette'],
-  ()->
+  (require, exports, module)->
     Marionette = require('marionette')
 
 
@@ -8,7 +7,7 @@ define(
       __module__: 'main'
       __file__: 'main'
       initialize: ()->
-        console.log('main')
+        console.log('main sdfsdf')
         this.generate_template()
         return this
 
