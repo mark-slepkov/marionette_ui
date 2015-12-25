@@ -25,7 +25,7 @@ var paths = {
     },
     js:{
         src: {
-            entry: "src/init",
+            entry: "init",
             compiled: "dist/**/*.js"
         }
     }
@@ -68,8 +68,8 @@ gulp.task('webpack', function(callback){
 		    ]
         },
         resolve: {
-            modulesDirectories: ['', './', 'src/', 'src/apps/', 'bower_components'],
-            extensions: ["", ".coffee"],
+            modulesDirectories: ['bower_components', 'src'],
+            extensions: [".coffee", ".js", ""],
             alias: {
                 marionette: 'backbone.marionette'
             }
