@@ -5,7 +5,8 @@ _ = require('underscore')
 Marionette = require('marionette')
 require('script!nunjucks')
 console.log(nunjucks);
-nunjucks.configure('/dist', {autoescape: true});
+
+nunjucks.configure('dist', {autoescape: true});
 
 Marionette.TemplateCache.prototype.loadTemplate =
     (templatePath, options)->
