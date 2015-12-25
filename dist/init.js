@@ -1,7 +1,9 @@
 (function() {
-  var $, Marionette;
+  var $, Marionette, _;
 
   $ = require('jquery');
+
+  _ = require('underscore');
 
   Marionette = require('marionette');
 
