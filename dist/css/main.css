@@ -1,3 +1,9 @@
+[data-module="main"][data-application="main"][data-template="default"] .header {
+  background-color: #000;
+  color: #fff;
+  font-size: 16pt;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+}
 [data-module="select"][data-template="default"][data-application="int"] {
   width: 66px;
 }

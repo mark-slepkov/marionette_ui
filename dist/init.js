@@ -47,7 +47,7 @@
   };
 
   $(document).on('ready', function() {
-    var MarionetteSelect, items, select;
+    var Main, MarionetteSelect, items, main, select;
     MarionetteSelect = require('marionette-select');
     items = [
       {
@@ -71,8 +71,10 @@
       }
     ];
     select = new MarionetteSelect(items);
-    $('body').append(select.$el);
-    return select.render();
+    Main = new require('main/main');
+    main = new Main();
+    $('body').append(main.$el);
+    return main.render();
   });
 
 }).call(this);
