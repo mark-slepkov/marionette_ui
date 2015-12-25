@@ -1,0 +1,24 @@
+{
+  "name": "marionette_ui",
+  "homepage": "http://mark-slepkov.github.io/marionette_ui/",
+  "authors": [
+    "Mark Slepkov <self@mark-slepkov.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "marionette-select": "https://github.com/mark-slepkov/marionette_select.git"
+
+  }
+}
