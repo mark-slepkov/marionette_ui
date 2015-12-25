@@ -16987,7 +16987,7 @@
 	
 	    main.prototype.__module__ = 'main';
 	
-	    main.prototype.__file__ = 'main';
+	    main.prototype.__application__ = 'main';
 	
 	    main.prototype.initialize = function() {
 	      console.log('main');

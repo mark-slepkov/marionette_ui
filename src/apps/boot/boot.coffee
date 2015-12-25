@@ -5,7 +5,7 @@ define(
 
     class main extends Marionette.LayoutView
       __module__: 'main'
-      __file__: 'main'
+      __application__: 'main'
 
       initialize: ()->
         console.log('main')
