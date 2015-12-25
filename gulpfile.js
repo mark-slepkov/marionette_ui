@@ -25,15 +25,15 @@ var paths = {
     },
     js:{
         src: {
-            entry: "dist/init.js",
+            entry: "src/init",
             compiled: "dist/**/*.js"
         }
     }
 };
 
-gulp.task('coffee', function(){
-    gulp.src(paths.coffee.src).pipe(coffee()).pipe(gulp.dest(paths.coffee.dest))
-});
+//gulp.task('coffee', function(){
+//    gulp.src(paths.coffee.src).pipe(coffee()).pipe(gulp.dest(paths.coffee.dest))
+//});
 
 gulp.task('stylus', function(){
     gulp.src(paths.stylus.main)
@@ -62,9 +62,14 @@ gulp.task('webpack', function(callback){
             filename: 'build.js',
             library: 'jquery'
         },
+        module:{
+            loaders: [
+			    { test: /\.coffee$/, loader: "coffee" }
+		    ]
+        },
         resolve: {
-            modulesDirectories: ['', 'dist', 'bower_components'],
-            // extensions: ['.js'],
+            modulesDirectories: ['', 'src', 'bower_components'],
+            extensions: ["", ".js", ".coffee"],
             alias: {
                 marionette: 'backbone.marionette'
             }
@@ -95,7 +100,7 @@ gulp.task('webpack', function(callback){
 gulp.task('watch', function() {
     gulp.watch([paths.stylus.src], ['stylus']);
     gulp.watch([paths.project_html.src], ['html']);
-    gulp.watch([paths.coffee.src], ['coffee', 'webpack']);
+    gulp.watch([paths.coffee.src], ['webpack']);
     //gulp.watch([paths.js.src.compiled, paths.js.src.entry], ['webpack']);
 });
 gulp.task("build", ['coffee', 'stylus', 'html', 'webpack']);
