@@ -49,8 +49,8 @@ $(document).on(
             {key: "Gandalf", value: 6}
         ]
         select = new MarionetteSelect(items)
-        Main = new require('boot/boot')
-        main = new Main()
-        $('body').append(main.$el)
-        main.render()
+#        Main = new require('boot/boot')
+#        main = new Main()
+#        $('body').append(main.$el)
+#        main.render()
     )
