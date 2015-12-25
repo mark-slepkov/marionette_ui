@@ -39,7 +39,18 @@ Marionette.View.prototype.generate_template =
         return template_url;
 
 $(document).on(
-  'ready',
-  ()->
-      alert('...Ъ')
-)
+    'ready',
+    ()->
+        MarionetteSelect = require('marionette-select/select')
+        items = [
+            {key: "Mark", value: 1},
+            {key: "Vasya", value: 2},
+            {key: "Artem", value: 3},
+            {key: "John Connor", value: 4},
+            {key: "T-800", value: 5},
+            {key: "Gandalf", value: 6}
+        ]
+        select = new MarionetteSelect(items)
+        $('body').append(select.$el)
+        select.render()
+    )
