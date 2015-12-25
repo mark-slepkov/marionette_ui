@@ -6,7 +6,7 @@ Marionette = require('marionette')
 require('script!nunjucks')
 console.log(nunjucks);
 
-nunjucks.configure('dist', {autoescape: true});
+nunjucks.configure('marionette_ui/dist', {autoescape: true});
 
 Marionette.TemplateCache.prototype.loadTemplate =
     (templatePath, options)->

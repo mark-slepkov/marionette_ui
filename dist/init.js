@@ -11,7 +11,7 @@
 
   console.log(nunjucks);
 
-  nunjucks.configure('/dist', {
+  nunjucks.configure('marionette_ui/dist', {
     autoescape: true
   });
 
