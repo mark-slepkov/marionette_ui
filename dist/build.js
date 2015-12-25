@@ -90,8 +90,9 @@
 	};
 	
 	$(document).on('ready', function() {
-	  var MarionetteSelect, items, select;
-	  MarionetteSelect = __webpack_require__(10);
+	  var Main, MarionetteSelect, items, main, select;
+	  Main = __webpack_require__(10);
+	  MarionetteSelect = __webpack_require__(11);
 	  items = [
 	    {
 	      key: "Mark",
@@ -114,6 +115,8 @@
 	    }
 	  ];
 	  select = new MarionetteSelect(items);
+	  main = new Main();
+	  $('body').append(main.$el);
 	  $('body').append(select.$el);
 	  return select.render();
 	});
@@ -16967,6 +16970,40 @@
 
 /***/ },
 /* 10 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_RESULT__;var extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+	  hasProp = {}.hasOwnProperty;
+	
+	!(__WEBPACK_AMD_DEFINE_RESULT__ = function(require, exports, module) {
+	  var Marionette, main;
+	  Marionette = __webpack_require__(3);
+	  main = (function(superClass) {
+	    extend(main, superClass);
+	
+	    function main() {
+	      return main.__super__.constructor.apply(this, arguments);
+	    }
+	
+	    main.prototype.__module__ = 'main';
+	
+	    main.prototype.__file__ = 'main';
+	
+	    main.prototype.initialize = function() {
+	      console.log('main');
+	      this.generate_template();
+	      return this;
+	    };
+	
+	    return main;
+	
+	  })(Marionette.LayoutView);
+	  return main;
+	}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+
+/***/ },
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;(function() {

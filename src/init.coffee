@@ -39,6 +39,7 @@ Marionette.View.prototype.generate_template =
 $(document).on(
     'ready',
     ()->
+        Main = require('boot/boot')
         MarionetteSelect = require('marionette-select')
         items = [
             {key: "Mark", value: 1},
@@ -49,8 +50,10 @@ $(document).on(
             {key: "Gandalf", value: 6}
         ]
         select = new MarionetteSelect(items)
-#        Main = new require('boot/boot')
-#        main = new Main()
+
+        main = new Main()
+        $('body').append(main.$el)
         $('body').append(select.$el)
+
         select.render()
     )

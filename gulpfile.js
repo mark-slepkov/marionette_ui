@@ -68,7 +68,7 @@ gulp.task('webpack', function(callback){
 		    ]
         },
         resolve: {
-            modulesDirectories: ['bower_components', 'src'],
+            modulesDirectories: ['bower_components', 'src', 'src/apps'],
             extensions: [".coffee", ".js", ""],
             alias: {
                 marionette: 'backbone.marionette'
