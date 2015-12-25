@@ -4,7 +4,6 @@ _ = require('underscore')
 
 Marionette = require('marionette')
 require('script!nunjucks')
-console.log(nunjucks);
 
 nunjucks.configure('dist', {autoescape: true});
 

@@ -59,8 +59,8 @@ gulp.task('webpack', function(callback){
         output: {
             path: "dist/",
             publicPath: '/',
-            filename: 'build.js',
-            library: 'jquery'
+            filename: 'build.js'
+            //library: 'jquery'
         },
         module:{
             loaders: [
@@ -68,7 +68,7 @@ gulp.task('webpack', function(callback){
 		    ]
         },
         resolve: {
-            modulesDirectories: ['', './', 'src', 'src/apps', 'bower_components'],
+            modulesDirectories: ['', './', 'src/', 'src/apps/', 'bower_components'],
             extensions: ["", ".coffee"],
             alias: {
                 marionette: 'backbone.marionette'
