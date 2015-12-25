@@ -51,6 +51,7 @@ $(document).on(
         ]
         select = new MarionetteSelect(items)
 
+
         main = new Main()
         $('body').append(main.$el)
         $('body').append(select.$el)
