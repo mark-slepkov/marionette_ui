@@ -48,7 +48,7 @@
 
   $(document).on('ready', function() {
     var MarionetteSelect, items, select;
-    MarionetteSelect = require('marionette-select/select');
+    MarionetteSelect = require('marionette-select');
     items = [
       {
         key: "Mark",

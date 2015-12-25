@@ -41,7 +41,7 @@ Marionette.View.prototype.generate_template =
 $(document).on(
     'ready',
     ()->
-        MarionetteSelect = require('marionette-select/select')
+        MarionetteSelect = require('marionette-select')
         items = [
             {key: "Mark", value: 1},
             {key: "Vasya", value: 2},

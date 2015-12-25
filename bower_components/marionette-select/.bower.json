@@ -1,11 +1,11 @@
 {
   "name": "marionette_select",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "authors": [
     "Mark Slepkov <self@mark-slepkov.ru>"
   ],
   "description": "select widget for backbone.marionette based projects",
-  "main": "dist/select.js",
+  "main": "dist/select/",
   "moduleType": [
     "amd"
   ],
@@ -28,11 +28,11 @@
     "backbone.marionette": "*",
     "nunjucks": "*"
   },
-  "_release": "0.0.4",
+  "_release": "0.0.5",
   "_resolution": {
     "type": "version",
-    "tag": "v0.0.4",
-    "commit": "0282141c012472b55d874cb8c20a414be85183e5"
+    "tag": "v0.0.5",
+    "commit": "765f844c1222659d39c0eda8029062f49aff7af9"
   },
   "_source": "https://github.com/mark-slepkov/marionette_select.git",
   "_target": "*",
