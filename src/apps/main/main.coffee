@@ -5,7 +5,7 @@ define(
 
 
     class main extends Marionette.LayoutView
-      __module__: ''
+      __module__: 'main'
       __file__: 'main'
       initialize: ()->
         this.generate_template()
