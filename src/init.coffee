@@ -51,7 +51,7 @@ $(document).on(
         ]
 
         select = new MarionetteSelect(items)
-        Main = new require('./boot/boot')
+        Main = new require('boot/boot')
         main = new Main()
         $('body').append(main.$el)
         main.render()
