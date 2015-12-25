@@ -20,16 +20,14 @@
   };
 
   Marionette.Renderer.render = function(templatePath, options) {
-    options.yourself = Users(0).toJSON();
     return nunjucks.render(templatePath, options);
   };
 
   Marionette.View.prototype.generate_template = function(options) {
-    var app_name, attributes, module_name, root, template_name, template_url;
+    var app_name, attributes, module_name, template_name, template_url;
     if (!options) {
       options = {};
     }
-    root = options.__root__ || this.__root__ || 'apps';
     module_name = options.__module__ || this.__module__;
     app_name = options.__application__ || this.__application__;
     template_name = options.__template__ || this.__template__ || 'default';

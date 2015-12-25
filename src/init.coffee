@@ -13,15 +13,14 @@ Marionette.TemplateCache.prototype.loadTemplate =
 
 Marionette.Renderer.render =
     (templatePath, options)->
-        options.yourself = Users(0).toJSON();
         return nunjucks.render(templatePath, options);
+
 
 
 Marionette.View.prototype.generate_template =
     (options)->
         if not options
             options = {}
-        root = options.__root__ || this.__root__ || 'apps'
         module_name = options.__module__ || this.__module__
         app_name = options.__application__ || this.__application__
         template_name = options.__template__ || this.__template__ || 'default'
