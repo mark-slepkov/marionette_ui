@@ -103,5 +103,5 @@ gulp.task('watch', function() {
     gulp.watch([paths.coffee.src], ['webpack']);
     //gulp.watch([paths.js.src.compiled, paths.js.src.entry], ['webpack']);
 });
-gulp.task("build", ['coffee', 'stylus', 'html', 'webpack']);
+gulp.task("build", ['stylus', 'html', 'webpack']);
 gulp.task("default", ['build']);

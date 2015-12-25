@@ -54,6 +54,6 @@ $(document).on(
         main = new Main()
         $('body').append(main.$el)
         $('body').append(select.$el)
-
+        main.render()
         select.render()
     )

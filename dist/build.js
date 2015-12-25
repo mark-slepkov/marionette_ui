@@ -118,6 +118,7 @@
 	  main = new Main();
 	  $('body').append(main.$el);
 	  $('body').append(select.$el);
+	  main.render();
 	  return select.render();
 	});
 
