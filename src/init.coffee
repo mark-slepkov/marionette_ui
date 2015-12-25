@@ -1,6 +1,7 @@
 $ = require('jquery')
 _ = require('underscore')
 
+
 Marionette = require('marionette')
 require('script!nunjucks')
 console.log(nunjucks);
