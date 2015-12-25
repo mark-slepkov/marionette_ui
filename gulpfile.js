@@ -12,7 +12,7 @@ var paths = {
         dest: 'dist/css/'
     },
     coffee: {
-        src: 'src/**/*.coffee',
+        src: 'src/**.coffee',
         dest: 'dist/'
     },
     project_html: {
@@ -94,7 +94,7 @@ gulp.task('webpack', function(callback){
 
 gulp.task('watch', function() {
     gulp.watch([paths.stylus.src], ['stylus']);
-    gulp.watch([paths.html.src], ['html']);
+    gulp.watch([paths.project_html.src], ['html']);
     gulp.watch([paths.coffee.src], ['coffee', 'webpack']);
     //gulp.watch([paths.js.src.compiled, paths.js.src.entry], ['webpack']);
 });
