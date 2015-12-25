@@ -1,0 +1,40 @@
+{
+  "name": "marionette_select",
+  "version": "0.0.4",
+  "authors": [
+    "Mark Slepkov <self@mark-slepkov.ru>"
+  ],
+  "description": "select widget for backbone.marionette based projects",
+  "main": "dist/select.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "marionette",
+    "select",
+    "ui",
+    "widget"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mark-slepkov/marionette_select",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone.marionette": "*",
+    "nunjucks": "*"
+  },
+  "_release": "0.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.4",
+    "commit": "0282141c012472b55d874cb8c20a414be85183e5"
+  },
+  "_source": "https://github.com/mark-slepkov/marionette_select.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/mark-slepkov/marionette_select.git"
+}
