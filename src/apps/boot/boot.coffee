@@ -8,7 +8,7 @@ define(
       __file__: 'main'
 
       initialize: ()->
-        console.log('main sdfsdf')
+        console.log('main')
         this.generate_template()
         return this
 
