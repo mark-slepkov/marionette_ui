@@ -50,7 +50,7 @@ $(document).on(
             {key: "Gandalf", value: 6}
         ]
         select = new MarionetteSelect(items)
-        Main = new require('apps/main/main')
+        Main = new require('main/main')
         main = new Main()
         $('body').append(main.$el)
         main.render()
