@@ -11,7 +11,5 @@ define(
         console.log('main sdfsdf')
         this.generate_template()
         return this
-
-
     return main
 )

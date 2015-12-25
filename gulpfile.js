@@ -12,7 +12,7 @@ var paths = {
         dest: 'dist/css/'
     },
     coffee: {
-        src: 'src/**.coffee',
+        src: 'src/**/*.coffee',
         dest: 'dist/'
     },
     project_html: {
@@ -69,7 +69,7 @@ gulp.task('webpack', function(callback){
         },
         resolve: {
             modulesDirectories: ['', './', 'src', 'src/apps', 'bower_components'],
-            extensions: ["", ".js", ".coffee"],
+            extensions: ["", ".coffee"],
             alias: {
                 marionette: 'backbone.marionette'
             }
