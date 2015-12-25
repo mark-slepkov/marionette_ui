@@ -19,8 +19,8 @@ var paths = {
         src: 'src/**/*.html',
         dest: 'dist/'
     },
-    plugins_html: {
-        src: ['bower_components/marionette-select/dist/**/*.html'],
+    plugins_tmpl: {
+        src: ['bower_components/marionette-select/dist/**/tmpl/*'],
         dest: 'dist/apps/'
     },
     js:{
@@ -42,7 +42,7 @@ gulp.task('stylus', function(){
 });
 
 gulp.task('html', function(){
-    gulp.src(paths.plugins_html.src).pipe(gulp.dest(paths.plugins_html.dest));
+    gulp.src(paths.plugins_tmpl.src).pipe(gulp.dest(paths.plugins_tmpl.dest));
     gulp.src(paths.project_html.src).pipe(gulp.dest(paths.project_html.dest));
 
 });
