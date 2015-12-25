@@ -1,5 +1,7 @@
 (function() {
-  var Marionette;
+  var $, Marionette;
+
+  $ = require('jquery');
 
   Marionette = require('marionette');
 

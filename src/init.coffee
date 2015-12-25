@@ -4,6 +4,7 @@
 # *#
 
 $ = require('jquery')
+
 Marionette = require('marionette')
 require('script!nunjucks')
 console.log(nunjucks);
