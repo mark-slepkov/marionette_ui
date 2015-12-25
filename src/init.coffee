@@ -48,9 +48,10 @@ $(document).on(
             {key: "T-800", value: 5},
             {key: "Gandalf", value: 6}
         ]
+
         select = new MarionetteSelect(items)
 #        Main = new require('boot/boot')
 #        main = new Main()
-#        $('body').append(main.$el)
-#        main.render()
+        $('body').append(select.$el)
+        select.render()
     )

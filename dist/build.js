@@ -113,7 +113,9 @@
 	      value: 6
 	    }
 	  ];
-	  return select = new MarionetteSelect(items);
+	  select = new MarionetteSelect(items);
+	  $('body').append(select.$el);
+	  return select.render();
 	});
 
 
