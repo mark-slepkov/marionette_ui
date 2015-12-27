@@ -15,7 +15,7 @@ Marionette.Renderer.render =
     (templatePath, options)->
         return nunjucks.render(templatePath, options);
 
-Marionette.View.prototype.generate_template =
+Marionette.View.prototype.getTemplate =
     (options)->
         if not options
             options = {}

@@ -66,7 +66,7 @@
 	  return nunjucks.render(templatePath, options);
 	};
 	
-	Marionette.View.prototype.generate_template = function(options) {
+	Marionette.View.prototype.getTemplate = function(options) {
 	  var app_name, attributes, module_name, template_name, template_url;
 	  if (!options) {
 	    options = {};
