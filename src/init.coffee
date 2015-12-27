@@ -33,7 +33,6 @@ Marionette.View.prototype.getTemplate =
         _.extend(this.attributes, attributes)
         this.$el.attr(attributes)
         # console.log(this.attributes)
-
         return template_url;
 
 $(document).on(
