@@ -18,7 +18,7 @@
     "tests"
   ],
   "dependencies": {
-    "marionette-select": "https://github.com/mark-slepkov/marionette_select.git"
-
+    "marionette-select": "https://github.com/mark-slepkov/marionette_select.git",
+    "normalize.css": "*"
   }
 }
