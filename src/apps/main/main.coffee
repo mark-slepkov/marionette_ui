@@ -9,7 +9,6 @@ define(
 
       initialize: ()->
         console.log('main')
-        this.generate_template()
         return this
 
     return main
