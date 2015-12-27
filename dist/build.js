@@ -92,7 +92,7 @@
 	$(document).on('ready', function() {
 	  var Main, MarionetteSelect, items, main, select;
 	  Main = __webpack_require__(10);
-	  MarionetteSelect = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"marionette-select/int\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	  MarionetteSelect = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"marionette-select\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	  items = [
 	    {
 	      key: "Mark",
