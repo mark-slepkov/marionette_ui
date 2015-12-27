@@ -22,7 +22,7 @@ Marionette.View.prototype.generate_template =
         module_name = options.__module__ || this.__module__
         app_name = options.__application__ || this.__application__
         template_name = options.__template__ || this.__template__ || 'default'
-        template_url = 'apps/' + module_name + '/tmpl/' + app_name + '/' + template_name + '/template.html';
+        template_url = 'apps/' + module_name + '/tmpl/' + app_name + '/' + template_name + '/template.html'
         this.template = template_url;
         attributes =
             'data-module': module_name
