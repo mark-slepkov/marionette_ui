@@ -16992,7 +16992,6 @@
 	
 	    main.prototype.initialize = function() {
 	      console.log('main');
-	      this.generate_template();
 	      return this;
 	    };
 	
