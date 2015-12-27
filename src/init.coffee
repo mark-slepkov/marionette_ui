@@ -51,8 +51,6 @@ $(document).on(
             {key: "Gandalf", value: 6}
         ]
         select = new MarionetteSelect(items)
-
-
         main = new Main()
         $('body').append(main.$el)
         $('body').append(select.$el)
