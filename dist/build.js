@@ -92,7 +92,7 @@
 	$(document).on('ready', function() {
 	  var Main, MarionetteSelect, items, main, select;
 	  Main = __webpack_require__(10);
-	  MarionetteSelect = __webpack_require__(11);
+	  MarionetteSelect = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"marionette-select/int\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	  items = [
 	    {
 	      key: "Mark",
@@ -17000,43 +17000,6 @@
 	
 	  })(Marionette.LayoutView);
 	  return main;
-	}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-
-
-/***/ },
-/* 11 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_RESULT__;(function() {
-	  !(__WEBPACK_AMD_DEFINE_RESULT__ = function(require, exports, module) {
-	    var Int, Interval, Select;
-	    Select = __webpack_require__(12);
-	    Int = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"int\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-	    Interval = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"interval\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-	    return {
-	      Select: Select,
-	      Int: Int,
-	      Interval: Interval
-	    };
-	  }.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	
-	}).call(this);
-
-
-/***/ },
-/* 12 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function(require, exports, module) {
-	  var Int, Interval, Select;
-	  Select = __webpack_require__(12);
-	  Int = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"int\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-	  Interval = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"interval\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-	  return {
-	    Select: Select,
-	    Int: Int,
-	    Interval: Interval
-	  };
 	}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 

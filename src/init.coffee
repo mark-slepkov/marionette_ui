@@ -41,7 +41,7 @@ $(document).on(
     ()->
 
         Main = require('main/main')
-        MarionetteSelect = require('marionette-select')
+        MarionetteSelect = require('marionette-select/int')
         items = [
             {key: "Mark", value: 1},
             {key: "Vasya", value: 2},
